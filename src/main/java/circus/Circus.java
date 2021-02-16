@@ -69,12 +69,15 @@ public class Circus {
         makeAnimalsTalk();
         System.out.println("Total value of animals " + calculateAssetValue(animals));
         System.out.println("Total value of equipments " + calculateAssetValue(equipments));
+
         Cage<Duck> duckCage = new Cage<>();
         Duck duck = new Duck("Dewey");
         duckCage.lockUp(duck);
+
         Parrot parrot = new Parrot("Popper");
         Cage<Parrot> parrotCage = new Cage<>();
         parrotCage.lockUp(parrot);
+
         ArrayList<Cage> cages = new ArrayList<>();
         cages.add(duckCage);
         cages.add(parrotCage);
